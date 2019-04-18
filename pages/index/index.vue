@@ -12,6 +12,11 @@
 				</swiper>
 			</view>
 		</view>
+		<uni-notice-bar 
+			show-icon="true" 
+			scrollable="true" single="true" 
+			text="[单行] 这是 NoticeBar 通告栏，这是 NoticeBar 通告栏，这是 NoticeBar 通告栏">
+		</uni-notice-bar>
         <image class="logo" src="/static/img/logo.png"></image>
 		<view>
             <text class="title">{{title}}</text>
@@ -20,6 +25,7 @@
 </template>
 
 <script>
+	import uniNoticeBar from "@/components/uni-notice-bar/uni-notice-bar.vue"
 	export default {
 		data() {
 			return {
@@ -36,7 +42,8 @@
 		},
 		methods: {
 			
-		}
+		},
+		components: {uniNoticeBar}
 	}
 </script>
 

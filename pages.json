@@ -1,0 +1,50 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "美食之家"
+			}
+		},{
+			"path":"pages/footder/footder",
+			"style":{}
+		},{
+			"path":"pages/hot/index",
+			"style":{
+				"navigationBarTitleText": "热门"
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "white",
+		"backgroundColor": "#333",
+		"color": "#8F8F94",
+		"selectedColor": "#f33e54",
+		"list": [{
+				"pagePath": "pages/index/index", //进入的页面
+				"iconPath": "static/img/home.png", //选择之前的图片
+				"selectedIconPath": "static/img/homeactive.png",		//选择之后的图片
+				"text": "首页" //底部文字
+			},
+			{
+					"pagePath": "pages/hot/index",
+					"iconPath": "static/img/guanzhu.png",
+					"selectedIconPath": "static/img/guanzhuactive.png",
+					"text": "热门"
+			},
+			{
+					"pagePath": "pages/index/index",
+					"iconPath": "static/img/me.png",
+					"selectedIconPath": "static/img/meactive.png",
+					"text": "我"
+			}
+		]
+	}
+}

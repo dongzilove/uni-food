@@ -17,6 +17,17 @@
 			scrollable="true" single="true" 
 			text="[单行] 这是 NoticeBar 通告栏，这是 NoticeBar 通告栏，这是 NoticeBar 通告栏">
 		</uni-notice-bar>
+		<uni-grid :options="[
+    {image:'https://img-cdn-qiniu.dcloud.net.cn/img/shu.png',text:'圣诞树'},
+    {image:'https://img-cdn-qiniu.dcloud.net.cn/img/lindang.png',text:'铃铛'},
+    {image:'https://img-cdn-qiniu.dcloud.net.cn/img/laoren.png',text:'圣诞老人'},
+    {image:'https://img-cdn-qiniu.dcloud.net.cn/img/liwu.png',text:'礼物'},
+    {image:'https://img-cdn-qiniu.dcloud.net.cn/img/maozi.png',text:'帽子'},
+    {image:'https://img-cdn-qiniu.dcloud.net.cn/img/shoutao.png',text:'手套'},
+    {image:'https://img-cdn-qiniu.dcloud.net.cn/img/xueqiao.png',text:'雪橇'},
+    {image:'https://img-cdn-qiniu.dcloud.net.cn/img/xunlu.png',text:'驯鹿'}]" 
+    column-num="4">
+</uni-grid>
         <image class="logo" src="/static/img/logo.png"></image>
 		<view>
             <text class="title">{{title}}</text>
@@ -26,6 +37,7 @@
 
 <script>
 	import uniNoticeBar from "@/components/uni-notice-bar/uni-notice-bar.vue"
+	import uniGrid from "@/components/uni-grid/uni-grid.vue"
 	export default {
 		data() {
 			return {
@@ -43,7 +55,7 @@
 		methods: {
 			
 		},
-		components: {uniNoticeBar}
+		components: {uniNoticeBar,uniGrid}
 	}
 </script>
 
